@@ -1,0 +1,262 @@
+:root {
+  --original-blue: #005ea6;
+  --original-orange: #ed9121;
+  --original-orange-hover: #f08605;
+  --link-black: #1c1b22;
+  --border-gray: rgb(230, 227, 227);
+  --text-gray: #424242;
+  --text-grey: rgb(161, 160, 160);
+  --white: rgb(255, 255, 255);
+  --services-bg: rgb(245, 250, 255);
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-left: 20px;
+}
+.break {
+  padding-top: 80px;
+}
+.active {
+  font-weight: bold;
+  color: var(--original-orange) !important;
+}
+
+/* Hero section starts */
+#top-description {
+  height: 300px;
+  background-image: url("/images/our-services-bg.jpg");
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.small-break {
+  margin: 90px;
+}
+#top-description h2 {
+  font-size: 3rem;
+}
+#top-description .span-home {
+  color: var(--original-orange);
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+}
+
+.group {
+  padding-bottom: 10px;
+  margin: 5px 0;
+  width: 400px;
+}
+.services {
+  display: flex;
+  background-color: var(--services-bg);
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 15px;
+}
+.description {
+  background-color: var(--services-bg);
+  padding: 15px;
+  margin: 5px 0;
+  display: none;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+.visible {
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  border-radius: 5dvh;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+}
+.btn-rotate {
+  transform: rotate(90deg);
+}
+.add-color {
+  color: var(--white);
+  background-color: var(--original-orange-hover);
+}
+
+.services-active {
+  color: var(--original-orange-hover);
+}
+
+/* Services  */
+
+.img-cont {
+  max-width: 900px;
+  height: auto;
+}
+#this-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.services-overview {
+  padding-top: 20px;
+}
+.img-cont {
+  max-width: 900px;
+  height: auto;
+}
+#this-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.services-overview h2 {
+  padding: 10px 0;
+}
+.services-overview p {
+  max-width: 890px;
+  color: var(--text-gray);
+  padding-bottom: 15px;
+}
+.unique-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  min-width: 100%;
+  gap: 2%;
+}
+.single-group {
+  color: var(--text-gray);
+  margin: 15px 0;
+}
+
+.single-group p {
+  margin-top: 20px;
+  max-width: 350px;
+}
+.img-wrap {
+  max-width: 350px;
+}
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Media Query  */
+@media screen and (max-width: 900px) {
+  .services-wrapper {
+    flex-direction: column;
+  }
+  .group {
+    padding-bottom: 10px;
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .unique-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .hero-image {
+    display: none;
+  }
+  .section-para {
+    margin-right: 0 2%;
+  }
+}
+
+/* Services Styles  */
+
+.single-service {
+  background-color: var(--services-bg);
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+
+.hero-image {
+  min-width: 200px;
+}
+.hero-text {
+  padding: 0 20px;
+}
+
+.img-hero {
+  width: 100%;
+  object-fit: contain;
+}
+
+.link-to {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 50px 0;
+  color: var(--white);
+}
+
+.link-to button {
+  background-color: var(--original-orange);
+  color: var(--white);
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.link-to button:hover {
+  background-color: var(--original-orange-hover);
+  cursor: pointer;
+}
+
+.section-para h3 {
+  color: var(--original-blue);
+  font-size: 1.4rem;
+}
+.section-para ul li {
+  list-style-type: "✓  ";
+}
+.section-para ul > b {
+  font-size: 1.1rem;
+  color: var(--original-orange);
+  padding: 10px 0;
+  display: inline-block;
+}
+.section-para ul > b::before {
+  content: "💡 ";
+}
+
+.section-para ul li {
+  padding: 5px 0;
+}
+
+/* Read more button  */
+.description a button {
+  margin: 10px 0;
+  border: none;
+  width: 130px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: var(--original-orange);
+  color: var(--white);
+}
+.description a button:hover {
+  cursor: pointer;
+  background-color: var(--original-orange-hover);
+}

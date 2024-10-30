@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="kta.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/css/brands.min.css" />
+    <link rel="stylesheet" href="internForm.css" />
+    <title>Internship Form - Konfirm Tech Africa</title>
+  </head>
+  <body>
+    <div class="konfirm-header">
+      <div class="img">
+        <img src="assets/images/logo/KTA logo 2.png" alt="" class="img-img"/>
+      </div>
+    </div>
+   
+    <div class="container-form">
+
+        <div class="img-bg">
+            <img src="images/tech-companies.jpg" alt="" class="img-new">
+        </div>
+      <div class="main">
+        <div class="form-container">
+          
+
+          <form>
+            <div class="btn-container">
+                <button class="btn-back" onclick="handleBack()">← Back to Page</button>
+              </div>
+              <div class="center">
+                <h3>Great! You're one step away from joining in</h3>
+                <p>Fill out the form to get registered.</p>
+              </div>
+        <div class="form-content">
+            <div class="content">
+              <label for="firsname"> Enter Your First Name </label>
+              <input type="text" id="firsname" placeholder="John" required />
+            </div>
+            <div class="content">
+              <label for="middlename">
+                Enter Your Middle Name (optional)
+              </label>
+              <input type="text" id="middlename" placeholder="" />
+            </div>
+            <div class="content">
+              <label for="Surname"> Enter Your Surname </label>
+              <input type="text" id="Surname" placeholder="Doe" required/>
+            </div>
+            <div class="content">
+              <label for="number"> Enter Your Phone Number </label>
+              <input type="text" id="number" placeholder="+234 702 2222 222" required/>
+            </div>
+            <div class="content">
+              <label for="email"> Enter Your E-mail </label>
+              <input type="email" id="email" placeholder="johndoe@gmail.com" required />
+            </div>
+            <div class="content">
+              <label for="social">
+                Linkedin or Any Social Media Profile URL
+              </label>
+              <input type="text" id="social" required />
+            </div>
+            <div class="content">
+              <label for="gender"> Gender </label>
+              <select name="" id="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Female">Others</option>
+              </select>
+            </div>
+            <div class="content">
+              <label for="level"> What do you see yourself as? </label>
+              <select name="" id="level" required>
+                <option value="fresher">Fresher</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advance">Advance</option>
+              </select>
+            </div>
+            <div class="content">
+              <label for="requirement"> Do you have access to a laptop? </label>
+              <select name="" id="requirement" required>
+                <option value="yes">Yes</option>
+                <option value="no">no</option>
+              </select>
+            </div>
+            <div class="content">
+              <label for="availability">
+                Are you available to commit to the full duration of the program?
+              </label>
+              <select name="" id="availability" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="content">
+              <label for="path"> Career Paths: </label>
+              <select name="" id="path" required>
+                <option value="frontend">Frontend Development</option>
+                <option value="backend">Backend Development</option>
+                <option value="product design">Product Design</option>
+                <option value="product management">Product Management</option>
+                <option value="data analytics">Data Analytics</option>
+                <option value="virtual assistant">Virtual Assistant</option>
+              </select>
+            </div>
+            <div class="content">
+              <label for="view"> How did you get to know about us? </label>
+              <select name="" id="view" required>
+                <option value="social media" hidden>--------------</option>
+                <option value="social media">Social Media</option>
+                <option value="referral">Referral</option>
+                <option value="others">Others</option>
+                <option value="official website">Official Website</option>
+              </select>
+            </div>
+            <div class="content-pledge">
+              <input type="checkbox" name="" id="" required/>
+              <label for="didication"> Pledge dedication </label>
+              <p>
+                I pledge to make the most of this opportunity by dedicating
+                myself wholeheartedly to my studies, attendance of all mentoring
+                sessions and projects.
+              </p>
+            </div>
+            <div class="content-pledge">
+              <input type="checkbox" name="" id="" required/>
+              <label for="didication"> Pledge terms </label>
+              <p>
+                I pledge to abide by the Terms and Conditions governing Konfrim
+                Tech Africa throughout my studies and afterward.
+              </p>
+            </div>
+            <button class="btn-register">Register</button>
+          </form>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/jquery.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
